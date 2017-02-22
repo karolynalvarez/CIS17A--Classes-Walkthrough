@@ -21,3 +21,18 @@ bool Course::EnrollStudent(Student newStudent, int position) {
 	return false;
 
 }
+
+std::string Course::GetClassInfo()
+{
+	string info = "Course Information for " + _name + "\n";
+	info += _description; +"\n";
+	info += "-------------------";
+	info += "\n";
+	for (auto student : _students) {
+	
+
+		
+		info += student.GetName() + "\n";
+	}
+	return info;
+}

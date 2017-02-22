@@ -14,6 +14,6 @@ public:
 	Course(std::string name, std::string description, Teacher teacher);
 	~Course();
 	bool EnrollStudent (Student newStudent, int position);
-
+	std::string GetClassInfo();
 };
 
